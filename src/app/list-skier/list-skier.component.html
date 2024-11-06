@@ -1,0 +1,12 @@
+<div *ngIf="skiers.length > 0">
+    <h3>List of Skiers</h3>
+    <ul>
+      <li *ngFor="let skier of skiers">
+        {{ skier.firstName }} {{ skier.lastName }} - {{ skier.city }} (DOB: {{ skier.dateOfBirth }})
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="skiers.length === 0">
+    <p>No skiers available.</p>
+  </div>
+  
